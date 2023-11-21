@@ -1,7 +1,24 @@
 #ifndef SORT_H
 #define SORT_H
 
+#include <stdio.h>
 #include <stdlib.h>
+
+/* Comparison direction macros for bitonic sort */
+#define UP 0
+#define DOWN 1
+
+/**
+ * enum bool - enumeration of boolean values.
+ * @false: equels to 0
+ * @true: equels to 1
+ */
+ typedef enum bool
+ {
+	 false = 0,
+	 true
+ } bool;
+
 /**
  *  struct listint_s - The Doubly linked list node
  *  @n: Integer stored in the node
